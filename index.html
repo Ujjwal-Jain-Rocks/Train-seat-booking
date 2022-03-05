@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <title>Train Booking System</title>
+</head>
+
+<body>
+  <div class="title">Train Booking System</div>
+  <div class="layout">
+    <div class="page">
+      <div class="p1">
+        <div class="p-title">BOOK TICKET</div>
+        <div class="inputs">
+          <div class="vert">
+            <div class="input-title">From</div>
+            <select id="from" class="textinput">
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Ahmadabad">Ahmadabad</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Surat">Surat</option>
+              <option value="Pune">Pune</option>
+              <option value="Jaipur">Jaipur</option>
+            </select>
+          </div>
+          <div class="vert it-second">
+            <div class="input-title">Date</div>
+            <input id="date" type="date" class="textinput">
+          </div>
+        </div>
+        <div class="inputs">
+          <div class="vert">
+            <div class="input-title">To</div>
+            <select id="to" class="textinput">
+              <option value="Lucknow">Lucknow</option>
+              <option value="Kanpur">Kanpur</option>
+              <option value="Nagpur ">Nagpur</option>
+              <option value="Indore">Indore</option>
+              <option value="Thane">Thane</option>
+              <option value="Bhopal">Bhopal</option>
+              <option value="Patna">Patna</option>
+              <option value="Vadodara">Vadodara</option>
+              <option value="Ghaziabad">Ghaziabad</option>
+              <option value="Ludhiana">Ludhiana</option>
+            </select>
+          </div>
+          <div class="vert it-second">
+            <div class="input-title">Class</div>
+            <select id="BerthClass" class="textinput" id="TClass">
+              <option value="SL1">S1 (Rs100)</option>
+              <option value="SL2">S2 (Rs100)</option>
+              <option value="SL3">S3 (Rs100)</option>
+              <option value="SL4">S4 (Rs100)</option>
+              <option value="SL5">S5 (Rs100)</option>
+              <option value="AC1">AC1 (Rs220)</option>
+              <option value="AC2">AC2 (Rs220)</option>
+            </select>
+          </div>
+        </div>
+        <div class="hort">
+          <div class="btn">
+            <button id="submit">Search</button>
+          </div>
+          <div class="btn">
+            <button id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+
+      <div class="p2">
+
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+          </li>
+        </ul>
+
+        <div class="container">
+          <div class="screen"></div>
+          <div class="row">
+            <div class="STitle">SUB</div>
+            <div class="STitle">SLB</div>
+            <div class="STitle">LB</div>
+            <div class="STitle">MB</div>
+            <div class="STitle">UB</div>
+            <div class="STitle">LB</div>
+            <div class="STitle">MB</div>
+            <div class="STitle">UB</div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+
+        <p class="text">
+          You have selected <span id="count">0</span> seats for a price of ₹<span id="total">0</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
